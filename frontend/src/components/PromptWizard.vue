@@ -77,7 +77,7 @@ Please write down a detailed list of prompts for creating images worthy of this 
     methods: {
         async init() {
             this.isLoading = true;
-            this.openai = new OpenAI({apiKey: "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", dangerouslyAllowBrowser: true})
+            this.openai = new OpenAI({apiKey: "", dangerouslyAllowBrowser: true})
             const response = await this.openai.chat.completions.create({
                 model: "gpt-3.5-turbo",
                 messages: [{ role: "system", content: this.template }]
